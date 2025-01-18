@@ -116,7 +116,7 @@ const Layout = () => {
       profileImageUrl: "../images/boy.png", // Profile Image URL
       medalImageUrl: "../images/silvermedal.png", // Medal Image URL (add this new field)
       name: "Jane Doe",
-      email: "pr******@****.com",
+      email: "pr******@****",
       coins: 2530,
       marvel: "Marvel",
     },
@@ -147,7 +147,7 @@ const Layout = () => {
       rank: 4,
       imageUrl: "../images/boy.png", // Replace with actual image URL
       name: "Jane Doe",
-      email: "pr******@gmail.com",
+      email: "pr******@***",
       marvel: "Marvel",
       coins: 2245,
     },
