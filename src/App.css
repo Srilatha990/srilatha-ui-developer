@@ -1,0 +1,78 @@
+.container{
+ max-width: 100% !important;
+}
+
+
+/* Add the line after the second column */
+.second-column {
+    position: relative;
+  }
+  
+  /* Create the line between the second and third columns */
+  .second-column::after {
+    content: "";
+    position: absolute;
+    right: -1px; /* Position it right after the second column */
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background-color: gray;
+    display: none; /* Initially hide on mobile */
+  }
+  
+  /* Show the line only on medium and larger screens */
+  @media (min-width: 768px) {
+    .second-column::after {
+      display: block;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .col-2 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 70% !important; /* Adjust width to 70% */
+      height: 100vh;
+      background-color: #1a1a1a;
+      z-index: 1000;
+      transform: translateX(-100%); /* Initially hide the sidebar */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Show Sidebar when Visible */
+    .col-2.d-block {
+      transform: translateX(0); /* Slide in the sidebar */
+    }
+  }
+
+  /* On larger screens, Sidebar behaves normally */
+  @media (min-width: 768px) {
+    .col-2 {
+      position: relative;
+      transform: translateX(0);
+    }
+  }
+
+ 
+    @media (max-width: 767px) {
+        .main {
+          height: 280vh !important;  /* Change to 200vh on mobile */
+        }
+      }
+
+
+      @media (min-width: 768px) {
+        .col-md-6 {
+          width: 48% !important;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .col-12 {
+          padding:0px 0px !important;
+        }
+      }
+
+  
