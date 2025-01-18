@@ -1058,7 +1058,7 @@ const Layout = () => {
                           />
 
                           <div style={{ fontSize: '13px' }}>{item.name}</div>
-                          <div style={{ fontSize: '14px' }}>{item.email}</div>
+                          <div style={{ fontSize: '10px' }}>{item.email}</div>
                           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <div style={{ fontSize: '13px', marginTop: '10px' }}>{item.marvel}</div>
                             <div style={{ fontSize: '13px', marginTop: '10px' }}>
