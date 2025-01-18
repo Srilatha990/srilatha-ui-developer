@@ -58,7 +58,7 @@
  
     @media (max-width: 767px) {
         .main {
-          height: 280vh !important;  /* Change to 200vh on mobile */
+          height: 289vh !important;  /* Change to 200vh on mobile */
         }
       }
 
